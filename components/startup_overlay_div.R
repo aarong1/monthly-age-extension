@@ -92,7 +92,7 @@ tags$div(id = "startup-overlay",
 .progress1 {
     width: 0;
     height: 100%;
-    background-color: #E01F5411;
+    background-color: #E01F54;
     /* rgb(122,326,111); */ 
     animation: fill1 2s ease 3s 1 forwards;
     z-index:1001;
@@ -147,7 +147,7 @@ style = "
     left: 1%;
     width: 98%;
     height: 98%;
-    background: linear-gradient(45deg, #E01F54 20%, #ff687f 90%);
+    background: linear-gradient(45deg, #E01F54 60%, #ff687f 90%);
     color: rgb(30,30,30);
     text-align: center;
     border-radius:20px;
