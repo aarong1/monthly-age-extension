@@ -1,11 +1,24 @@
 source('components/button_block_box_shadow.R')
 startup_overlay_div <- function(overlay_out_time_ms = 500, main_in_time_ms=700){
   
-tags$div(id = "startup-overlay",  style = 'background-colour:white;',
+tags$div(id = "startup-overlay",  
+         style = ' position: fixed;
+    top: 0%; /*110px*/
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    color: rgb(30,30,30);
+    text-align: center;
+    border-radius:20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10040;
+    background:white;',
   div(
          tags$head(HTML('<style>
          
-
   .glass-card {
   /* background: rgba(255, 255, 255, 0.44); /* 0.14 */
   backdrop-filter: blur(5px);
@@ -79,7 +92,7 @@ tags$div(id = "startup-overlay",  style = 'background-colour:white;',
 .progress1 {
     width: 0;
     height: 100%;
-    background-color: #e01f54aa;
+    background-color: #E01F5411;
     /* rgb(122,326,111); */ 
     animation: fill1 2s ease 3s 1 forwards;
     z-index:1001;
@@ -98,8 +111,6 @@ tags$div(id = "startup-overlay",  style = 'background-colour:white;',
       width: 100%;
     }
     }
-
-
 
          .hello{
   font-weight: bold; /* Makes the text bold */
@@ -132,10 +143,10 @@ tags$div(id = "startup-overlay",  style = 'background-colour:white;',
 
 style = "
     position: fixed;
-    top: 0%; /*110px*/
-    left: 0%;
-    width: 100%;
-    height: 100%;
+    top: 1%; /*110px*/
+    left: 1%;
+    width: 98%;
+    height: 98%;
     background: linear-gradient(45deg, #E01F54 20%, #ff687f 90%);
     color: rgb(30,30,30);
     text-align: center;

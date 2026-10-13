@@ -44,13 +44,11 @@ load_data()
 source('script_js.R')
 # Define UI for application that draws a histogram
 
-
-
 ############################################
 ############################################
 ############################################
 
-lapply(ls(global_env()),function(x){
+lapply(ls(globalenv()),function(x){
   y <<- x
   obj <- get(x)
   if('echarts4r'%in%class(obj)){
@@ -72,8 +70,8 @@ lapply(ls(global_env()),function(x){
       
       
       # x<<-obj
-      print (obj)
-      assign(x, obj,envir = global_env())
+      # print (obj)
+      assign(x, obj,envir = globalenv())
     }}
   
 })
