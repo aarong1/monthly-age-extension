@@ -10,6 +10,8 @@ library(shiny)
 library(bslib)
 library(htmltools)
 library(tidyverse)
+library(htmltools)
+library(htmlwidgets)
 
 ##############################
  ###### Run before use ######
@@ -43,7 +45,9 @@ source('script_js.R')
 # Define UI for application that draws a histogram
 
 ui <- page_fluid(theme = bs_theme(bootswatch = 'litera',
-                                  primary = 'black',info = 'lightyellow',success = 'lightgreen'),
+                                  primary = 'black',
+                                  info = 'lightyellow',
+                                  success = 'lightgreen'),
     
     startup_overlay_div(7000,15000),
     slide_panel_ui('slide' , 'Hello'),
